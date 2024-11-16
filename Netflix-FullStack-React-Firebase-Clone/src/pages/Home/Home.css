@@ -27,3 +27,54 @@
     font-size: 17px;
     margin-bottom: 20px;
 }
+
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.hero-btns .btn img{
+    width: 25px;
+
+}
+
+.hero-btns .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: rgb(255, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hero-btns .btn.dark-btn{
+    color: #fff;
+    background: #6d6d6e94;
+}
+
+/* #play_icon{
+    filter: invert(100%);
+} */
+
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+
+.hero-btns .dark-btn:hover{
+    background: #6d6d6eb3;
+}
+
+/* .more_cards {
+    padding-left: 6%;
+}
+
+.cards {
+    margin-top: 10px;
+} */
