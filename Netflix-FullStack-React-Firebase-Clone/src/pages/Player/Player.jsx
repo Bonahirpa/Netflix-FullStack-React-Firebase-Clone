@@ -11,15 +11,6 @@
 //     type: ""
 //   });
 
-//   const url = "https://api.themoviedb.org/3/movie/912649/videos?language=en-US";
-//   const options = {
-//     method: "GET",
-//     headers: {
-//       accept: "application/json",
-//       Authorization:
-//         "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDI2NjRjMDc5ZTU3ZTFmZTdjZTQ1M2Y4ZDY0MzIwOSIsIm5iZiI6MTczMTc2MzYxNy44NDYyNjY1LCJzdWIiOiI2NzM0ZjAyNTY4MDgzZDA1NDA4YTA3NGYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.1jsFhxS3cQQx3x4zQ3FWethswTUZE-FmQndYv3WYwvM",
-//     },
-//   };
 
 //   useEffect(() => {
   
@@ -76,15 +67,7 @@ const Player = () => {
 
 
 
-  const options = {
-    method: "GET",
-    headers: {
-      accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDI2NjRjMDc5ZTU3ZTFmZTdjZTQ1M2Y4ZDY0MzIwOSIsIm5iZiI6MTczMTc2MzYxNy44NDYyNjY1LCJzdWIiOiI2NzM0ZjAyNTY4MDgzZDA1NDA4YTA3NGYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.1jsFhxS3cQQx3x4zQ3FWethswTUZE-FmQndYv3WYwvM",
-    },
-  };
-  
+
   useEffect(()=>{
     fetch(url, options)
       .then((response) => response.json())
