@@ -37,3 +37,21 @@
     background: rgba(0, 0, 0, 8);
 }
 
+
+
+@media (max-width: 800px) {
+    .titlecards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .titlecards h2{
+        font-style: 15px;
+    }
+    .card-list img{
+        width: 165px;
+    }
+    .card-list p{
+        font-style: 12px;
+    }
+}
+

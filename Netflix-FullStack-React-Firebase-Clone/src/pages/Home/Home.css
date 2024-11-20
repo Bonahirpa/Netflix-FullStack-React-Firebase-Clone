@@ -1,5 +1,6 @@
 .hero{
     position: relative;
+    height: 980px;
 }
 .banner-img{
     width: 100%;
@@ -12,7 +13,8 @@
 .hero-caption{
     position: absolute;
     width: 100%;
-    margin-top: 200px !important;
+    /* margin-top: 100px; */
+    /* padding-top: 100px; */
     padding-left: 6%;
     bottom: 0;
 }
@@ -60,9 +62,6 @@
     background: #6d6d6e94;
 }
 
-/* #play_icon{
-    filter: invert(100%);
-} */
 
 .hero-btns .btn:hover{
     background: #ffffffbf;
@@ -82,6 +81,56 @@
 
 
 
+
+
+@media (max-width: 1024px) {
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 800px){
+    .hero{
+    position: relative;
+    height: 600px;
+}
+    .hero-caption{
+        padding-left: 4%;
+    }
+    .caption-img{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .hero-caption p{
+        font-style: 12px;
+        margin-bottom: 10px;
+ 
+    }
+     .btn img{
+        width: 20px;
+
+    }
+    .more-cars{
+        padding-left: 4%;
+    }
+}
+@media (max-width: 500px){
+.hero{
+    position: relative;
+    height: 480px;
+}
+    .caption-img{
+        display: none;
+
+    }
+    .hero-btns .btn img{
+        width: 15px;
+    }
+    .hero-btns .btn{
+        padding: 4px 10px;
+        gap:5px;
+        font-style: 10px;
+    }
+}
 
 
 
@@ -145,11 +194,10 @@
     background: #6d6d6e94;
 }
 
-/* #play_icon{
+#play_icon{
     filter: invert(100%);
-} */
-
-/* .hero-btns .btn:hover{
+}
+.hero-btns .btn:hover{
     background: #ff2c2cd3;
 }
 
@@ -163,4 +211,4 @@
 
 .cards {
     margin-top: 10px;
-}  */
+}   */

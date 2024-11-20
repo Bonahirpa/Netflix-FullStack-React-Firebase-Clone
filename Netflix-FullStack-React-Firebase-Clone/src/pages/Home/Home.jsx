@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import "./Home.css"
 import Navbar from "../../components/Navbar/Navbar"
 import hero_banner from "../../assets/cards/hero_banner.jpg"
@@ -33,7 +33,9 @@ const Home = () => {
               More Info
             </button>
           </div>
-          <TitleCards />
+          <div className="title_cards">
+            <TitleCards />
+          </div>
         </div>
       </div>
       <div className="more-cars">

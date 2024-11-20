@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./TitleCards.css";
-import cards_data from "../../assets/cards/Cards_data";
+// import cards_data from "../../assets/cards/Cards_data";
+import { Link } from "react-router-dom";
 
 const TitleCards = ({title, category }) => {
   
@@ -60,13 +61,13 @@ const options = {
       <h2>{title || "Popular on Netflix"}</h2>
       <div className="card-list" ref={cardListRef}>
         {ApiData.map((card, index) => (
-          <div className="card" key={index}>
+          <Link to={ `/player/${card.id}`} className="card" key={index}>
             <img
               src={`https://image.tmdb.org/t/p/w500/` + card.backdrop_path}
               alt={card.name}
             />
             <p>{card.original_title}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
